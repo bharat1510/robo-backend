@@ -130,3 +130,6 @@ dmypy.json
 
 # migration files
 migrations/
+
+# igonre db file
+*.db

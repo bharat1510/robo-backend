@@ -47,5 +47,5 @@ class SignupAPI(Resource):
         """Creates a new User """
         data = request.json
         is_admin = True if request.headers.get('admin_secret_key') == 'maibhiadmin' else False
-        print(is_admin)
+        
         return Auth.signup_user(data=data, is_admin=is_admin)
